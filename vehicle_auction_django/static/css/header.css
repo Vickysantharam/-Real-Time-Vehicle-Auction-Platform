@@ -1,0 +1,27 @@
+/* ===== HEADER / NAV ===== */
+header {
+  background: #222;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.logo { font-size: 1.6rem; font-weight: bold; color: #ff6600; text-decoration: none; }
+header nav ul { list-style: none; display: flex; gap: 0.5rem; margin: 0; padding: 0; }
+header nav ul li a {
+  color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 5px;
+  font-size: 0.95rem; transition: background 0.2s, color 0.2s;
+}
+header nav ul li a:hover { background: #ff6600; color: #fff; }
+.btn-login {
+  background: #007BFF; color: #fff !important; border-radius: 5px;
+  padding: 8px 16px !important; font-weight: bold;
+}
+.btn-login:hover { background: #0056b3 !important; }
+.btn-admin { background: #e00 !important; }
+.btn-admin:hover { background: #b00 !important; }

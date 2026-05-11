@@ -1,0 +1,38 @@
+/* ===== LOGIN PAGE ===== */
+.login-page {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
+.card-container { perspective: 1000px; }
+.card {
+  width: 420px; position: relative; transform-style: preserve-3d;
+  transition: transform 0.7s; min-height: 480px;
+}
+.card.flipped { transform: rotateY(180deg); }
+.card-face {
+  position: absolute; width: 100%; min-height: 480px; backface-visibility: hidden;
+  background: rgba(255,255,255,0.12); backdrop-filter: blur(20px);
+  border-radius: 15px; padding: 2.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.card-back { transform: rotateY(180deg); }
+.card-face h2 { color: #fff; text-align: center; margin-bottom: 1.5rem; font-size: 1.8rem; }
+.card-face input {
+  display: block; width: 100%; padding: 12px 16px; margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.3); border-radius: 8px;
+  background: rgba(255,255,255,0.15); color: #fff; font-size: 1rem; outline: none;
+}
+.card-face input::placeholder { color: rgba(255,255,255,0.6); }
+.card-face input:focus { border-color: #ff6600; background: rgba(255,255,255,0.2); }
+.card-face button[type="submit"] {
+  width: 100%; padding: 12px; background: #ff6600; color: #fff;
+  border: none; border-radius: 8px; font-size: 1rem; font-weight: bold;
+  cursor: pointer; transition: background 0.2s, transform 0.2s; margin-bottom: 0.75rem;
+}
+.card-face button[type="submit"]:hover { background: #e65c00; transform: translateY(-2px); }
+.card-face .switch-btn {
+  width: 100%; padding: 10px; background: transparent;
+  color: rgba(255,255,255,0.8); border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px; font-size: 0.95rem; cursor: pointer; transition: all 0.2s;
+}
+.card-face .switch-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }

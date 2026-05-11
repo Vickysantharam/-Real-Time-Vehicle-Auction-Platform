@@ -1,0 +1,9 @@
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  #hero h1 { font-size: 2rem; }
+  header nav ul { gap: 0.2rem; }
+  header nav ul li a { padding: 6px 8px; font-size: 0.85rem; }
+  .admin-sidebar { width: 100%; min-height: auto; position: relative; }
+  .admin-content { margin-left: 0; }
+  .card { width: 90vw; }
+}
